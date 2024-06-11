@@ -1,14 +1,7 @@
-
-function isMobile() {
-    return /Mobi|Android|iPhone|iPad|BlackBerry|Windows Phone/i.test(navigator.userAgent);
-}
-
 function loadWrapper() {
     loadFooter();
 }
 
-function loadJs(location) {
-}
 function loadFooter() {
     var xhr = new XMLHttpRequest();
     xhr.open('GET', './footer.html', true);
@@ -17,6 +10,7 @@ function loadFooter() {
             document.getElementById('footer').innerHTML = xhr.responseText;
         }
         loadJsonData();
+
     };
     xhr.send();
 }
@@ -29,6 +23,7 @@ function loadJsonData() {
         if (xhr.readyState === 4 && xhr.status === 200) {
             jsonData = JSON.parse(xhr.responseText);
             replaceInnerHTMLWithJSONValues();
+            setAnimation();
         }
     };
     xhr.send();
@@ -88,22 +83,45 @@ function replaceInnerHTMLWithJSONValues() {
             }
         }
     });
-    navActiveLink();
-}
-
-function navActiveLink() {
-    var currentPath = window.location.pathname;
-    var navbarLinks = document.querySelectorAll('.navbar-nav .nav-link')
-    navbarLinks.forEach(function (link) {
-        var linkPath = link.getAttribute('href');
-        if (currentPath === linkPath) {
-            link.classList.add('active-nav');
-        }
-    });
 }
 
 function scrollToContent(id) {
     $('html,body').animate({
         scrollTop: $('#' + id).offset().top
     }, 'fast');
+}
+
+
+function setAnimation() {
+    const items = document.querySelectorAll('.appear2');
+    const itemsAppear = document.querySelectorAll('.appear3');
+    const active = function (entries) {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('inview2');
+            } else {
+                entry.target.classList.remove('inview2');
+            }
+        });
+    }
+    const io2 = new IntersectionObserver(active);
+    for (let i = 0; i < items.length; i++) {
+        io2.observe(items[i]);
+    }
+
+
+    // appear
+    const active2 = function (entries) {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('inview2');
+            } else {
+                entry.target.classList.remove('inview2');
+            }
+        });
+    }
+    const io3 = new IntersectionObserver(active2);
+    for (let i = 0; i < itemsAppear.length; i++) {
+        io2.observe(itemsAppear[i]);
+    }
 }

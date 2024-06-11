@@ -24,27 +24,20 @@
     <link rel="stylesheet" href="./styles.css">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <link id="favicon" rel="icon" href="favicon.svg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 </head>
 
 
 <body onload="loadWrapper()">
-    <script src="./main.js"></script>
-    <script>
-        function loadJs_html() {
-            loadJs(window.location.href);
-        }
-        loadJs_html()
-    </script>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
         crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
         crossorigin="anonymous"></script>
-    <script src="./main.js"></script>
-    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+
     <div class="content text-n100 position-relative overflow-hidden">
         <div class="navbar navbar-dark mb-3 mt-1 px-4" style="z-index: 1;">
-            <a class="navbar-brand  " href="./index.html">
+            <a class="navbar-brand" href="./index.html">
                 <span class="text-small px-1"><img src="./img/navbar-logo.svg" alt="Vampire Attack Logo"></span>
             </a>
         </div>
@@ -53,22 +46,21 @@
 
         <div class="container">
             <!-- HEADER -->
-
             <div id="seg-0" class="row position-relative">
-                <div class="ps-5 position-relative overflow-hidden mt-high w-100 container header-cont">
-                    <div class="px-3 px-lg-0 w-lg-50">
-                        <div class="text-uppercase text-narrow-height mt-high">
+                <div class="ps-lg-5 position-relative overflow-hidden mt-high w-100 container header-cont">
+                    <div class="px-3 px-lg-0 w-lg-50 fade-effect" fade-time="2" fade-direction="left">
+                        <div class="text-uppercase text-narrow-height mt-5">
                             <h1 class="text-uppercase monserrat-bold text-xxlarge text-narrow-height"
                                 data-query="home.header.title">
                                 unleash <br> your fury
                             </h1>
                         </div>
-                        <div class="text-thin text-medium fauna-one my-4 text-narrow-height text-d4 mb-5"
+                        <div class="text-thin text-medium fauna-one my-4 text-narrow-height text-d4 mb-5 "
                             data-query="home.header.subtitle">
                             Attack the top DeFi protocols and reclaim your power.
                         </div>
                         <a data-query="home.header.button._" data-attribute="href" data-target="target" target="_self"
-                            href="#">
+                            href="#" class="">
                             <button class="box btn nunito-semibold text-small bg-red btn-xpadding mb-high text-dark"
                                 data-query="home.header.button.name">MIGRATE LIQUIDITY NOW</button>
                         </a>
@@ -77,16 +69,19 @@
             </div>
 
             <!-- WHAT IT IS -->
-            <div style="height: 100px;"></div>
+            <div class="vertical-gap"></div>
             <div class="row mt-high mb-high position-relative">
                 <div class="col-lg-5">
                     <img src="./img/bg-what.png" id="defi-bg" class="w-70" alt="What it is">
                 </div>
-                <div class="col-lg-7 mt-high">
+                <div class="col-lg-7 mt-high" style="padding-inline: 2rem;">
                     <div>
-                        <h3 class="monserrat-bold text-large text-uppercase">What is <br>
+                        <h3 class="monserrat-bold text-large text-uppercase fade-effect"
+                            data-query="home.segment-1.0.title" fade-time="2" fade-direction="left">What is <br>
                             Vampire Attack?</h3>
-                        <p class="text-d4 text-small fauna-one w-75 mt-4">We are attacking the top DeFi protocols:
+                        <p class="text-d4 text-medium fauna-one w-90 mt-4 fade-effect"
+                            data-query="home.segment-1.0.description" fade-time="2" fade-direction="left">We are
+                            attacking the top DeFi protocols:
                             Uniswap,
                             Sushiswap,
                             1inch,
@@ -95,27 +90,35 @@
                             betrayed their users and can't execute. This is the revenge of the users.</p>
                     </div>
                     <div class="mt-5">
-                        <h3 class="monserrat-bold text-large text-uppercase">WHY?</h3>
-                        <p class="text-d4 text-small fauna-one w-75 mt-4">
+                        <h3 class="monserrat-bold text-large text-uppercase fade-effect"
+                            data-query="home.segment-1.1.title" fade-time="2" fade-direction="left">WHY?</h3>
+                        <p class="text-d4 text-medium fauna-one w-90 mt-4 fade-effect"
+                            data-query="home.segment-1.1.description" fade-time="2" fade-direction="left">
                             These protocols have failed their users. It's time to take action and reclaim control.</p>
                     </div>
                     <div class="mt-5">
-                        <h3 class="monserrat-bold text-large text-uppercase">When?</h3>
-                        <p class="text-d4 text-small fauna-one w-75 mt-4">The time is NOW. Join the attack and migrate
+                        <h3 class="monserrat-bold text-large text-uppercase fade-effect"
+                            data-query="home.segment-1.2.title" fade-time="2" fade-direction="left">When?</h3>
+                        <p class="text-d4 text-medium fauna-one w-90 mt-4 fade-effect"
+                            data-query="home.segment-1.2.description" fade-time="2" fade-direction="left">The time is
+                            NOW. Join the attack and migrate
                             your
                             liquidity.
                         </p>
                     </div>
                 </div>
             </div>
-
-
+            <div class="vertical-gap"></div>
         </div>
 
-
+        <!-- footer -->
         <footer id="footer"></footer>
 
     </div>
+    <script src="./fadescroll.js"></script>
+    <script src="./main.js"></script>
+
+
 </body>
 
 </html>
