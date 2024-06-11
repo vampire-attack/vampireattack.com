@@ -1,0 +1,267 @@
+    @font-face {
+        font-family: 'Fauna One Regular';
+        font-style: normal;
+        font-weight: normal;
+        src: local('Fauna One Regular'), url('fonts/FaunaOne-Regular.woff') format('woff');
+    }
+
+    @font-face {
+        font-family: 'Montserrat';
+        src: url('fonts/Montserrat.ttf');
+
+    }
+
+    @font-face {
+        font-family: 'Montserrat-Bold';
+        src: url('fonts/Montserrat-Bold.ttf');
+
+    }
+
+    @font-face {
+        font-family: 'Montserrat-SemiBold';
+        src: url('fonts/Montserrat-SemiBold.ttf');
+
+    }
+
+    @font-face {
+        font-family: 'Montserrat-Regular';
+        src: url('fonts/Montserrat-Regular.ttf');
+    }
+
+    @font-face {
+        font-family: 'Montserrat-Medium';
+        src: url('fonts/Montserrat-Medium.ttf');
+    }
+
+    @font-face {
+        font-family: 'Nunito-SemiBold';
+        src: url('fonts/Nunito-SemiBold.ttf');
+    }
+
+    /* FONTS */
+    .monserrat {
+        font-family: 'Montserrat';
+    }
+
+    .monserrat-bold {
+        font-family: 'Montserrat-Bold';
+    }
+
+    .monserrat-semibold {
+        font-family: 'Montserrat-SemiBold';
+    }
+
+    .monserrat-regular {
+        font-family: 'Montserrat-Regular';
+    }
+
+    .monserrat-medium {
+        font-family: 'Montserrat-Regular';
+    }
+
+    .nunito-semibold {
+        font-family: 'Nunito-SemiBold';
+    }
+
+    .fauna-one {
+        font-family: 'Fauna One Regular';
+    }
+
+    .text-xsmall {
+        font-size: 10pt !important;
+    }
+
+    .text-small {
+        font-size: 13pt !important;
+    }
+
+    .text-medium {
+        font-size: 16pt !important;
+    }
+
+    .text-medium-mob {
+        font-size: 20pt !important;
+    }
+
+    .text-large-mob {
+        font-size: 28pt !important;
+    }
+
+    .text-large {
+        font-size: 30pt !important;
+    }
+
+    .text-xlarge {
+        font-size: 48pt !important;
+    }
+
+    .text-xxlarge {
+        font-size: 72pt !important;
+    }
+
+    .text-bold {
+        font-weight: 700;
+    }
+
+    .text-thin {
+        font-weight: 250;
+    }
+
+    @media (max-width: 576px) {
+        .text-small {
+            font-size: 10pt !important;
+        }
+
+        .text-medium {
+            font-size: 13pt !important;
+        }
+
+        .text-large {
+            font-size: 18pt !important;
+        }
+
+        .text-xlarge {
+            font-size: 27pt !important;
+        }
+
+        .text-xxlarge {
+            font-size: 32pt !important;
+        }
+
+        .text-bold {
+            font-weight: 700;
+        }
+
+        .text-thin {
+            font-weight: 250;
+        }
+
+
+    }
+
+    @media (min-width: 576px) {
+        .text-small {
+            font-size: 11pt !important;
+        }
+
+        .text-medium {
+            font-size: 15pt !important;
+        }
+
+        .text-large {
+            font-size: 24pt !important;
+        }
+
+        .text-xlarge {
+            font-size: 38pt !important;
+        }
+
+        .text-xxlarge {
+            font-size: 48pt !important;
+        }
+
+        .text-bold {
+            font-weight: 700;
+        }
+
+        .text-thin {
+            font-weight: 250;
+        }
+
+
+    }
+
+    @media (min-width: 768px) {
+        .text-small {
+            font-size: 11pt !important;
+        }
+
+        .text-medium {
+            font-size: 15pt !important;
+        }
+
+        .text-large {
+            font-size: 24pt !important;
+        }
+
+        .text-xlarge {
+            font-size: 38pt !important;
+        }
+
+        .text-xxlarge {
+            font-size: 48pt !important;
+        }
+
+        .text-bold {
+            font-weight: 700;
+        }
+
+        .text-thin {
+            font-weight: 250;
+        }
+    }
+
+    @media (min-width: 992px) {}
+
+    @media (min-width: 1200px) {}
+
+    @media (min-width: 1400px) {
+        .text-small {
+            font-size: 11pt !important;
+        }
+
+        .text-medium {
+            font-size: 15pt !important;
+        }
+
+        .text-large {
+            font-size: 24pt !important;
+        }
+
+        .text-xlarge {
+            font-size: 43pt !important;
+        }
+
+        .text-xxlarge {
+            font-size: 66pt !important;
+        }
+
+        .text-bold {
+            font-weight: 700;
+        }
+
+        .text-thin {
+            font-weight: 250;
+        }
+    }
+
+    @media (min-width: 1600px) {
+        .text-small {
+            font-size: 13pt !important;
+        }
+
+        .text-medium {
+            font-size: 16pt !important;
+        }
+
+        .text-large {
+            font-size: 30pt !important;
+        }
+
+        .text-xlarge {
+            font-size: 48pt !important;
+        }
+
+        .text-xxlarge {
+            font-size: 72pt !important;
+        }
+
+        .text-bold {
+            font-weight: 700;
+        }
+
+        .text-thin {
+            font-weight: 250;
+        }
+
+    }
