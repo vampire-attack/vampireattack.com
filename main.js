@@ -125,3 +125,22 @@ function setAnimation() {
         io2.observe(itemsAppear[i]);
     }
 }
+
+
+const images = document.querySelectorAll('.floating-image');
+
+document.addEventListener('mousemove', (event) => {
+    const { clientX, clientY } = event;
+    const centerX = window.innerWidth / 2;
+    const centerY = window.innerHeight / 2;
+
+    const deltaX = (clientX - centerX) / centerX;
+    const deltaY = (clientY - centerY) / centerY;
+
+    images.forEach((image, index) => {
+        const depth = (index + 1) * 10;
+        const offsetX = -deltaX * depth;
+        const offsetY = -deltaY * depth;
+        image.style.transform = `translate(${offsetX}px, ${offsetY}px)`;
+    });
+});

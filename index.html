@@ -25,10 +25,13 @@
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <link id="favicon" rel="icon" href="favicon.svg">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <link rel="stylesheet" type="text/css" href="https://csshake.surge.sh/csshake.min.css">
 </head>
 
 
 <body onload="loadWrapper()">
+
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
         crossorigin="anonymous"></script>
@@ -36,45 +39,82 @@
         crossorigin="anonymous"></script>
 
     <div class="content text-n100 position-relative overflow-hidden">
-        <div class="navbar navbar-dark mb-3 mt-1 px-4" style="z-index: 1;">
-            <a class="navbar-brand" href="./index.html">
-                <span class="text-small px-1"><img src="./img/navbar-logo.svg" alt="Vampire Attack Logo"></span>
-            </a>
+      <div class="container-fluid" id="main-header">
+        <div class="heroImage">
+            <!-- <img src="./img/vampire-header.png" id="vampire-header" alt="Vampire Attack Header"> -->
+
+            <img id="Background" src="./img/heroImage/Background-only.png" alt="">
+            <img id="RedSun" src="./img/heroImage/red-sun-only1.png" alt="">
+            <img id="vampire-and-horse" src="./img/heroImage/Bats.png" alt="">
+            <img id="RedSplash" class="RedSplash-animat" src="./img/heroImage/red-splash.png" alt="">
+            <img id="rocks-below" src="./img/heroImage/rocks-below.png" alt="">
+            <img id="vampire-and-horse" src="./img/heroImage/vampire-and-horse.png" alt="">
+            <img id="vampire-and-horse" class="laser-eyes" src="./img/heroImage/laser-eyes.png" alt="">
         </div>
-        <img src="./img/vampire-header.png" id="vampire-header" alt="Vampire Attack Header">
-
-
         <div class="container">
-            <!-- HEADER -->
-            <div id="seg-0" class="row position-relative">
-                <div class="ps-lg-5 position-relative overflow-hidden mt-high w-100 container header-cont">
-                    <div class="px-3 px-lg-0 w-lg-50 fade-effect" fade-time="2" fade-direction="left">
-                        <div class="text-uppercase text-narrow-height mt-5">
-                            <h1 class="text-uppercase monserrat-bold text-xxlarge text-narrow-height"
-                                data-query="home.header.title">
-                                unleash <br> your fury
-                            </h1>
+            <div class="navbar navbar-dark mb-3 mt-1 px-4 fixed-top">
+                <a class="navbar-brand" href="./index.html">
+                    <span class="text-small px-1"><img src="./img/navbar-logo.svg" alt="Vampire Attack Logo"></span>
+                </a>
+            </div>
+           
+                <!-- HEADER -->
+                <div id="seg-0" class="row position-relative">
+                    <div class="ps-lg-5 position-relative overflow-hidden mt-high w-100 container header-cont">
+                        <div class="px-3 px-lg-0 w-lg-50 fade-effect" fade-time="2" fade-direction="left">
+                            <div class="text-uppercase text-narrow-height mt-5">
+                                <h1 class="text-uppercase monserrat-bold text-xxlarge text-narrow-height"
+                                    data-query="home.header.title">
+                                    unleash <br> your fury
+                                </h1>
+                            </div>
+                            <div class="text-thin text-medium fauna-one my-4 text-narrow-height text-d4 mb-5 "
+                                data-query="home.header.subtitle">
+                                Attack the top DeFi protocols and reclaim your power.
+                            </div>
+                            <a data-query="home.header.button._"
+                             data-attribute="href"
+                              data-target="target"
+                               target="_self"
+                               data-query="home.header.button.name"
+                                href="#" class="box btn nunito-semibold text-small bg-red btn-xpadding mb-high text-dark">
+                                MIGRATE LIQUIDITY NOW
+                            </a>
                         </div>
-                        <div class="text-thin text-medium fauna-one my-4 text-narrow-height text-d4 mb-5 "
-                            data-query="home.header.subtitle">
-                            Attack the top DeFi protocols and reclaim your power.
-                        </div>
-                        <a data-query="home.header.button._" data-attribute="href" data-target="target" target="_self"
-                            href="#" class="">
-                            <button class="box btn nunito-semibold text-small bg-red btn-xpadding mb-high text-dark"
-                                data-query="home.header.button.name">MIGRATE LIQUIDITY NOW</button>
-                        </a>
                     </div>
                 </div>
-            </div>
+        </div>
+     
+      </div>
+    
+
+        <div class="container">
+        
 
             <!-- WHAT IT IS -->
-            <div class="vertical-gap"></div>
+          
             <div class="row mt-high mb-high position-relative">
-                <div class="col-lg-5">
-                    <img src="./img/bg-what.png" id="defi-bg" class="w-70" alt="What it is">
+                <div class="col-xl-5 position-relative mt-high" id="main-sec-2">
+                    <img src="./img/bg-what.png" class="bg-what-main">
+                    <div class="floating-image position-relative el-1-main">
+                        <img src="./img/el-3.png"  class="el-1 " alt="What it is">
+                        <img src="./img/vampireTooth.png"  class="el-tooth appear2" alt="What it is">
+                    </div>
+                    <div class="floating-image position-relative el-3-main">
+                        <img src="./img/el-2.png"  class="el-2" alt="What it is">
+                        <img src="./img/vampireTooth.png"  class="el-tooth-2 appear2" alt="What it is">
+                        </div>
+                    <div class="floating-image position-relative el-2-main">
+                        <img src="./img/el-1.png"  class="el-3" alt="What it is">
+                        <img src="./img/vampireTooth.png"  class="el-tooth-3 appear2" alt="What it is">
+                        </div>
+                   
+                    <div class="floating-image position-relative el-4-main">
+                        <img src="./img/el-4.png"  class="el-4" alt="What it is">
+                        <img src="./img/vampireTooth.png"  class="el-tooth-4 appear2" alt="What it is">
+                    </div>
                 </div>
-                <div class="col-lg-7 mt-high" style="padding-inline: 2rem;">
+                <div class="col-xl-7 mt-high" style="padding-inline: 2rem;">
                     <div>
                         <h3 class="monserrat-bold text-large text-uppercase fade-effect"
                             data-query="home.segment-1.0.title" fade-time="2" fade-direction="left">What is <br>
@@ -108,7 +148,7 @@
                     </div>
                 </div>
             </div>
-            <div class="vertical-gap"></div>
+           
         </div>
 
         <!-- footer -->

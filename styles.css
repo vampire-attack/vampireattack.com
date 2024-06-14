@@ -2,13 +2,11 @@
 
 /* For WebKit-based browsers */
 ::-webkit-scrollbar {
-    width: 8px;
+    width: 5px;
 }
 
 ::-webkit-scrollbar-thumb {
     -webkit-box-shadow: inset 0 0 6px rgba(184, 184, 184, 0.3);
-    border-radius: 10px;
-
     background-color: #FC393A;
 }
 
@@ -18,12 +16,10 @@
 
 /* For Firefox */
 ::-moz-scrollbar {
-    width: 8px;
+    width: 5px;
 }
 
 ::-moz-scrollbar-thumb {
-    border-radius: 10px;
-
     background-color: #FC393A;
 }
 
@@ -33,6 +29,7 @@
 
 
 body {
+    /* background-color: #101010; */
     background-color: #0B0B0B;
 }
 
@@ -367,7 +364,7 @@ body {
 
     .w-lg-50 {
         flex: 0 0 auto;
-        width: 75%;
+        width: 100%;
     }
 
     .mt-high {
@@ -403,8 +400,8 @@ body {
     -webkit-transition: all 1s;
     transition: all 1s;
     visibility: hidden;
-    -webkit-transform: translateY(200px);
-    transform: translateY(200px);
+    -webkit-transform: translateY(-200px);
+    transform: translateY(-200px);
     opacity: 0;
 
 }
@@ -449,4 +446,431 @@ body {
 
 .appear2.inview2:nth-child(5) {
     transition-delay: 0.5s;
+}
+
+/* -------------------------------------------------------- */
+.heroImage {
+    position: relative;
+}
+
+.heroImage img {
+    width: 100%;
+    position: absolute;
+    filter: brightness(60%) blur(0.5px) !important;
+    -webkit-filter: blur(0.5px);
+}
+
+#RedSun {
+    display: block;
+    /* margin: 50px auto; */
+    height: auto;
+    animation: rotate 303s linear infinite;
+    position: absolute;
+    width: 74%;
+    top: -160px;
+    right: -167px;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.batContaoner {
+    position: relative;
+    width: 10%;
+    height: 20%;
+    float: right;
+}
+
+.bat {
+    width: 150px !important;
+    position: absolute;
+    z-index: 1;
+}
+
+#bat1 {
+    top: 88vh;
+    left: -15%;
+    width: 60px !important;
+    filter: blur(3px);
+    -webkit-filter: blur(1px);
+}
+
+#bat2 {
+    top: 76vh;
+    left: -68%;
+    width: 55px !important;
+    filter: blur(1px);
+    -webkit-filter: blur(1px);
+}
+
+#bat3 {
+    top: 87vh;
+    left: -73%;
+    width: 55px !important;
+    filter: blur(2px) !important;
+    -webkit-filter: blur(1px);
+}
+
+#bat4 {
+    top: 64vh;
+    left: -83%;
+    width: 119px !important;
+    filter: blur(0px);
+    -webkit-filter: blur(1px);
+
+}
+
+#bat5 {
+    top: 73vh;
+    left: -96%;
+    width: 55px !important;
+    filter: blur(1px);
+    -webkit-filter: blur(2px);
+}
+
+#bat6 {
+    top: 48vh;
+    left: -35%;
+    width: 85px !important;
+    filter: blur(1px);
+    -webkit-filter: blur(1px);
+}
+
+#bat7 {
+    top: 81vh;
+    left: -38%;
+    width: 55px !important;
+    filter: blur(1px);
+    -webkit-filter: blur(2px);
+}
+
+#bat8 {
+    top: 89vh;
+    left: 83%;
+    width: 55px !important;
+    filter: blur(1px);
+    -webkit-filter: blur(1px);
+}
+
+#bat9 {
+    top: 95vh;
+    left: -69%;
+    width: 55px !important;
+    filter: blur(1px);
+    -webkit-filter: blur(2px);
+}
+
+#main-header {
+    height: 100vh;
+}
+
+@media (min-width:320px) and (max-width:480px) {
+    #main-header {
+        height: 70vh;
+    }
+
+    #RedSun {
+        right: 0;
+        top: 0;
+        width: 100%;
+    }
+
+    .btn-xpadding {
+        padding: 10px !important;
+
+    }
+
+    .header-cont {
+        margin-top: 70% !important;
+    }
+
+    .batContaoner {
+        position: absolute;
+        width: 100%;
+        height: auto;
+        /* float: right; */
+        top: 0;
+    }
+
+    #bat1 {
+        top: 10% !important;
+        left: 27% !important;
+        width: 60px !important;
+    }
+
+    #bat2 {
+        top: 20% !important;
+        left: 27% !important;
+        width: 60px !important;
+    }
+
+    #bat2 {
+        top: 15% !important;
+        left: 25%;
+        width: 60px !important;
+    }
+
+    .heroImage img {
+        top: 100px;
+        right: 27px;
+    }
+
+    #RedSun {
+        animation: rotate 100s linear infinite;
+    }
+
+    .batContaoner {
+        width: 100%;
+        height: auto;
+        display: none;
+    }
+
+    #main-sec-2 {
+        position: absolute !important;
+        z-index: -1;
+        opacity: .3;
+    }
+
+    .el-2-main {
+        display: none;
+    }
+
+    .el-3-main {
+        display: none;
+    }
+
+    .el-1-main {
+        display: none
+    }
+
+    .el-4-main {
+        display: none;
+    }
+
+    .bg-what-main {
+        display: block !important;
+    }
+
+}
+
+@media (min-width:481px) and (max-width:1024px) {
+    #RedSun {
+        animation: rotate 100s linear infinite;
+    }
+
+    #main-header {
+        height: 50vh;
+    }
+
+    #RedSun {
+        right: -50px;
+        top: -120px;
+        width: 100%;
+    }
+
+    .batContaoner {
+        width: 100%;
+        height: auto;
+        display: none;
+    }
+
+    .heroImage img {
+        top: 100px;
+        right: 27px;
+    }
+
+    .btn-xpadding {
+        padding: 10px !important;
+
+    }
+
+    .navbar-brand img {
+        width: 50%;
+        filter: brightness(60%) !important;
+    }
+
+
+    .el-2-main {
+        display: none;
+    }
+
+    .el-3-main {
+        display: none;
+    }
+
+    .el-1-main {
+        display: none
+    }
+
+    .el-4-main {
+        display: none;
+    }
+
+    #main-sec-2 {
+        position: absolute !important;
+        z-index: -1;
+        opacity: .3;
+       
+    }
+
+    .bg-what-main {
+        display: block !important;
+        height: 85% !important;
+    }
+}
+
+@media (max-width:1024px) and (max-height:600px) {
+    #main-header {
+        height: 100vh;
+    }
+}
+
+.RedSplash-animat {
+    animation: moveUpDown 12s ease-in-out infinite;
+}
+
+@keyframes moveUpDown {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    50% {
+        transform: rotate(5deg);
+    }
+
+
+}
+
+@keyframes shake {
+    0% {
+        top: 0px;
+    }
+
+    50% {
+        top: 10px;
+    }
+
+
+}
+
+.floating-image {
+    position: absolute;
+    transition: transform 0.1s ease;
+    /* animation: shake 30s ease-in-out infinite; */
+}
+
+.el-tooth {
+    width: 250px;
+    height: 100px;
+    top: 0;
+    left: 10px;
+    position: absolute;
+
+}
+
+.el-tooth-2 {
+    position: absolute;
+    width: 190px;
+    height: 90px;
+    top: 0;
+    left: 10px;
+}
+
+.el-tooth-3 {
+    position: absolute;
+    width: 160px;
+    height: 90px;
+    top: 0;
+    left: 10px;
+}
+
+.el-tooth-4 {
+    position: absolute;
+    width: 140px;
+    height: 80px;
+    top: 0;
+    left: 10px;
+}
+
+.el-1 {
+    width: 250px;
+    height: 250px;
+    position: absolute;
+}
+
+.el-1-main {
+    top: 0;
+    left: -50px;
+}
+
+.el-2-main {
+    top: 60%;
+    left: -50px;
+}
+
+.el-3-main {
+    top: 40%;
+    left: 30%;
+}
+
+.el-4-main {
+    top: 80%;
+    left: 35%;
+}
+
+.el-2 {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+
+}
+
+.el-3 {
+    width: 170px;
+    height: 170px;
+    position: absolute;
+
+}
+
+.el-4 {
+    width: 150px;
+    height: 150px;
+    position: absolute;
+
+}
+
+#main-sec-2 {
+    height: 700px;
+}
+
+.laser-eyes {
+    animation: opacityAyes 5s ease-in-out infinite;
+}
+
+.navbar-brand img {
+    filter: brightness(60%) !important;
+}
+
+.bg-what-main {
+    display: none;
+    height: 86vh;
+    width: 100%;
+    object-fit: contain;
+}
+
+@keyframes opacityAyes {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.3;
+    }
 }
